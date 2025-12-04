@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio12-PDF</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #pokemon-data {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            display: inline-block;
+            background-color: #f9f9f9;
+        }
+        img {
+            max-width: 200px;
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Buscador de Pokémon</h1>
+    <input type="text" id="pokemon-input" placeholder="Ingresa nombre o ID (ej: charizard o 6)">
+    <button id="search-btn">Buscar</button>
+    
+    <div id="pokemon-data" style="display: none;">
+        <img id="pokemon-image" src="" alt="Imagen del Pokémon">
+        <h2 id="pokemon-name"></h2>
+        <p><strong>Tipos:</strong> <span id="pokemon-types"></span></p>
+        <p><strong>Estadísticas Base:</strong> <span id="pokemon-stats"></span></p>
+    </div>
+    <div id="error-message" class="error" style="display: none;"></div>
+    <script src="Ejercicio10.js"></script>
+</body>
+</html>
